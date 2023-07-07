@@ -1,11 +1,3 @@
----
-title: Post One
-date: "2021-12-14"
-categories: 
-  - "numbers"
-  - "odd"
----
-
 # 👋 Hi, I’m @BarbarianTarkus  <img src="https://img1.picmix.com/output/stamp/normal/1/6/2/4/2304261_9a959.png" width="32" height="32" />
 
 ## Tech Skills:
@@ -37,5 +29,3 @@ categories:
 - [ ] Rust
 - [ ] Homelab administration
 - [ ] Practicing Offsec
-
-

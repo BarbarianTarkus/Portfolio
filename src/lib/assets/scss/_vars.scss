@@ -1,0 +1,59 @@
+// Breakpoints
+$xsMin: 37.5rem;
+$xsMax: 47.9375rem;
+$smMin: 48rem;
+$smMax: 63.9375rem;
+$mdMin: 64rem;
+$mdMax: 79.9375rem;
+$lgMin: 80rem;
+$lgMax: 89.9375rem;
+$xlMin: 90rem;
+$xlMax: 104.9375rem;
+$xxlMin: 105rem;
+$xxlMax: 122.4375rem;
+$xxxlMin: 122.5rem;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+:root {
+	// Colors
+	--text-accent: #f1c81b;
+	--accent: #324eb2;
+	--background: #000000;
+	--lightAccent: #1f1e1e;
+	--lighterAccent: #eb2319;
+	--dark: #efecda;
+	--darker: #fb9b18;
+	--slate: #fb9b18;
+
+	--white: #fff;
+	--black: #152030;
+
+	--ink: var(--slate);
+	--paper: var(--background);
+	
+
+	// Fonts
+	/**
+	 * These are broken out into two separate variables from a previous iteration. I left
+	 * it in because it's nice to be able to split out the heading and body fonts.
+	 */
+	--accentFont: 'Roboto Condensed'; 
+	--primaryFont: 'Roboto Condensed';
+	--codeFont: 'Fira Code';
+
+	// Base styles
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+body {
+	@media (min-width: $smMin) {
+		font-size: 1.125rem;
+	}
+
+	@media (min-width: $lgMin) {
+		font-size: 1.25rem;
+	}
+}

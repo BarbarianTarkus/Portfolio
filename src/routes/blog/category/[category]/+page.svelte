@@ -1,9 +1,9 @@
-<!-- src/routes/blog/+page.svelte -->
+
 <script>
 	export let data;
 </script>
 
-<h1>Blog</h1>
+<h1>Category</h1>
 
 <ul>
 	{#each data.posts as post}
