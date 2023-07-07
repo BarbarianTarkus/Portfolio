@@ -10,7 +10,7 @@
 
 main {
 	width: 100%;
-	max-width: 50rem;
+	max-width: 42rem;
 	margin: 6rem auto;
 	padding: 0 1rem;
 }
@@ -22,18 +22,15 @@ main {
 	min-height: 100vh;
 }
 
-
-//TODO - if there is no attributes on the img tag, do this
-// img {
-// 	width: 100%;
-// 	max-width: 100%;
-// 	height: auto;
-// }
+img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
 
 .post {
 	h1 {
 		margin-bottom: 1rem;
-		color: var(--text-accent);
 	}
 
 	.meta {
@@ -43,15 +40,6 @@ main {
 
 	img + h1 {
 		margin-top: 1rem;
-	}
-
-	//if backgound is black make the img white
-	img {
-		background-color: var(--white);
-	}
-	
-	svg {
-		fill: var(--white);
 	}
 }
 
@@ -76,8 +64,7 @@ li {
 	}
 }
 
-.post-footer {
-	
+.post-footer { 
 	ul {
 		padding: 0;
 	}
@@ -85,15 +72,15 @@ li {
 	li {
 		display: inline-block;
 		font-size: 0.8rem;
+
 		a {
-			text-decoration: none;
-			color: var(--white);
-			background-color: var(--lighterAccent);
+			background-color: var(--lightAccent);
 			padding: .5rem 0.75rem;
 			text-transform: uppercase;
 			font-family: var(--primaryFont);
 			font-weight: bold;
 		}
+
 		+ li {
 			margin-left: 0.5rem;
 		}
@@ -105,7 +92,7 @@ li {
 		position: relative;
 		
 		&::before {
-			//content: url('/link.svg');
+			content: url('/link.svg');
 			fill: currentColor;
 			position: absolute;
 			left: -1rem;

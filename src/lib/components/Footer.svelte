@@ -1,31 +1,21 @@
+<script>
+	import MainNav from './MainNav.svelte'
+	import { siteAuthor } from '$lib/config'
+</script>
+
 <footer>
-	<nav class="main-nav">
+	<MainNav />
+
+	<nav>
 		<ul>
-            <li >
-                <a href="/blog" aria-current="page" class="active">Blog</a>
-            </li>
 			<li>
-				<a href="/about">About</a>
+				<a href="/api/rss.xml" data-sveltekit-reload>RSS</a>
 			</li>
 			<li>
-				<a href="/contact">Contact</a>
+				<a href="/">Home</a>
 			</li>
 		</ul>
-
 	</nav>
-    <nav class="main-nav">
-        
-        <ul>
-            <li>
-                <br>
-            </li>
-            <li>
-                <a href="/rss">RSS</a>
-            </li>
-            <li>
-                <a href="https://github.com/BarbarianTarkus">GitHub</a>
-            </li>         
-        </ul>
-        
-    </nav>
+
+	<p>&copy;{new Date().getFullYear()} {siteAuthor}</p>
 </footer>

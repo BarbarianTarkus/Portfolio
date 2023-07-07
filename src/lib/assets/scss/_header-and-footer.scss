@@ -33,12 +33,12 @@ footer {
 }
 
 header {
-	background: var(--lightAccent);
+	background: var(--background);
 	color: var(--darker);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
+	border-bottom: 1px solid var(--dark);
 	@media (min-width: vars.$smMin) {
 		justify-content: center;
 		flex-wrap: wrap;
@@ -58,7 +58,7 @@ header {
 
 		@media (min-width: vars.$smMin) {
 			width: 100%;
-			font-size: 4rem;
+			font-size: 1.6rem;
 		}
 	}
 
@@ -160,12 +160,13 @@ header {
 }
 
 footer {
-	background: var(--lightAccent);
-	color: var(--darker);
+	background: var(--background);
+	color: var(--ink);
 	display: grid;
 	grid-template-columns: 100%;
 	align-items: stretch;
 	gap: 2rem;
+	border-top: 1px solid var(--dark);
 
 	@media (min-width: vars.$smMin) {
 		grid-template-columns: 1fr 1fr 2fr;

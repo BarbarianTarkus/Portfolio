@@ -24,6 +24,9 @@ const config = {
 	preprocess: [
 		vitePreprocess(),
 		sveltePreprocess({
+			scss: {
+			  prependData: `@import 'src/lib/assets/scss/vars';`				
+			},
 			postcss: {
 			  plugins: [autoprefixer]
 			},
