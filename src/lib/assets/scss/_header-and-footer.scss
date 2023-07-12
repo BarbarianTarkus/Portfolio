@@ -29,6 +29,8 @@ footer {
 
 	svg {
 		fill: currentColor;
+		height: 1.5rem;
+		width: 1.5rem;
 	}
 }
 
@@ -37,20 +39,20 @@ header {
 	color: var(--darker);
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	border-bottom: 1px solid var(--dark);
+
+
 	@media (min-width: vars.$smMin) {
 		justify-content: center;
-		flex-wrap: wrap;
 		height: auto;
 	}
 
 	.site-title {
+		align-self: flex-start;
 		font-family: var(--accentFont);
 		font-size: 2.1rem;
 		line-height: 1;
 		color: inherit;
-		text-align: center;
+		text-align: left;
 		margin: 0;
 		display: block;
 		font-size: 1.4rem;
@@ -86,6 +88,7 @@ header {
 		height: 100vh;
 		pointer-events: none;
 		opacity: 0;
+		align-self: flex-start;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -122,6 +125,8 @@ header {
 			right: 2rem;
 		}
 		
+
+
 		ul li {
 			font-size: 1.2rem;
 			display: block;
@@ -130,6 +135,9 @@ header {
 			margin-bottom: calc(.2rem + 2vh);
 		}
 
+		.nav-index {
+			color: var(--text-accent);
+		}
 		@media (min-width: vars.$smMin) {
 			opacity: 1;
 			transform: none;
@@ -144,7 +152,7 @@ header {
 			ul {
 				margin: 1rem auto 0;
 				padding-top: 0.5rem;
-				border-top: 1px solid var(--dark);
+
 				width: max-content;
 
 				li {
@@ -162,11 +170,7 @@ header {
 footer {
 	background: var(--background);
 	color: var(--ink);
-	display: grid;
-	grid-template-columns: 100%;
-	align-items: stretch;
 	gap: 2rem;
-	border-top: 1px solid var(--dark);
 
 	@media (min-width: vars.$smMin) {
 		grid-template-columns: 1fr 1fr 2fr;
@@ -189,12 +193,10 @@ footer {
 		display: initial;
 
 		@media (min-width: vars.$smMin) {
-			border-right: 1px solid var(--dark);
+
 		}
 
 		ul {
-			display: initial;
-
 			li + li {
 				margin-top: 0.5rem;
 			}

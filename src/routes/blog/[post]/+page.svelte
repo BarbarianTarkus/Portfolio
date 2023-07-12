@@ -43,7 +43,7 @@ const { PostContent } = data
 		height={coverHeight}
 	/>
 
-	<h1>{ title }</h1>
+	<h1 class=post-title>{ title }</h1>
 	
 	<div class="meta">
 		<b>Published:</b> {date}

@@ -8,13 +8,7 @@
 	color: var(--darker);
 }
 
-h1 {
-	font-size: 2.8rem;
-	margin: 0 0 3rem;
-	position: relative;
-	overflow: hidden;
-	padding-bottom: 1rem;
-
+.post-title{
 	&::after {
 		content: '';
 		height: 0.1em;
@@ -24,6 +18,17 @@ h1 {
 		position: absolute;
 		bottom: 0;
 	}
+}
+
+
+h1 {
+	font-size: 2.8rem;
+	margin: 0 0 3rem;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 1rem;
+
+
 
 	@media (min-width: vars.$smMin) {
 		font-size: 3rem;
@@ -59,7 +64,7 @@ h6 {
 }
 
 a {
-	color: var(--darker);
+	color: var(--slate);
 	text-decoration-thickness: 1px;
 	text-decoration-color: var(--dark);
 }

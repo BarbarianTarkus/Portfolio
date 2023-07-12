@@ -22,12 +22,17 @@ main {
 	min-height: 100vh;
 }
 
-img {
+
+.cover-image {
 	width: 100%;
 	max-width: 100%;
 	height: auto;
 }
-
+.cover-image-blog {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
 .post {
 	h1 {
 		margin-bottom: 1rem;

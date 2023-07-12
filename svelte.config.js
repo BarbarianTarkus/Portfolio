@@ -1,48 +1,48 @@
 import adapter from '@sveltejs/adapter-static'
-import { vitePreprocess } from '@sveltejs/kit/vite';
-import sveltePreprocess from 'svelte-preprocess';
 import { mdsvex } from 'mdsvex'
-import rehypeSlug from 'rehype-slug'
+import preprocess from 'svelte-preprocess'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-import autoprefixer from 'autoprefixer'
+import rehypeSlug from 'rehype-slug'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
-	// for more information about preprocessors
-	kit: {
-		alias: {
-			$lib: './src/lib'
-		},
-		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
-		// If your environment is not supported or you settled on a specific environment, switch out the adapter.
-		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
-		adapter: adapter(),
-
-	},
+	// Ensures both .svelte and .md files are treated as components (can be imported and used anywhere, or used as pages)
 	extensions: ['.svelte', '.md'],
+
 	preprocess: [
-		vitePreprocess(),
-		sveltePreprocess({
+		preprocess({
 			scss: {
-			  prependData: `@import 'src/lib/assets/scss/vars';`				
+				// Ensures Sass variables are always available inside component <style> blocks as vars.$variableDefinedInFile
+				prependData: `@use 'src/lib/assets/scss/vars';`
 			},
-			postcss: {
-			  plugins: [autoprefixer]
-			},
-			/* Other sveltePreprocess options here, like SCSS */
-		  }),
+		}),
 		mdsvex({
+			// The default mdsvex extension is .svx; this overrides that.
 			extensions: ['.md'],
-			layout: {
-				blog: 'src/routes/blog/post.svelte'
-			},
+
+			// Adds IDs to headings, and anchor links to those IDs. Note: must stay in this order to work.
 			rehypePlugins: [
 				rehypeSlug,
-				rehypeAutolinkHeadings
+				rehypeAutolinkHeadings,
 			],
-		})
-	]
+		}),
+	],
+
+	kit: {
+		adapter: adapter(),
+    prerender: {
+      entries: [
+        '*',
+        '/api/posts/page/*',
+        '/blog/category/*/page/',
+        '/blog/category/*/page/*',
+        '/blog/category/page/',
+        '/blog/category/page/*',
+        '/blog/page/',
+        '/blog/page/*',
+      ]
+    }
+	}
 };
 
 export default config;
