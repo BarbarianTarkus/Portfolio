@@ -10,17 +10,17 @@
 	<nav>
 		<ul>
 			<li>
-				<a href="#">
+				<a href="api/rss.xml">
 					<RSS />
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="https://github.com/BarbarianTarkus/svelte-blog">
 					<Github />
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="https://www.linkedin.com/in/ricardverdclar/">
 					<Linkedin />
 				</a>
 			</li>
