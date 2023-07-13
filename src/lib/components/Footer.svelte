@@ -11,17 +11,17 @@
 	<nav>
 		<ul>
 			<li>
-				<a href="#">
+				<a href="{base}/api/rss.xml">
 					<RSS />
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="https://github.com/BarbarianTarkus">
 					<Github />
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="https://www.linkedin.com/in/ricardverdclar/">
 					<Linkedin />
 				</a>
 			</li>
