@@ -13,6 +13,7 @@
 	const transitionOut = { duration: 100 };
 
 	export const prerender = true;
+	export const trailingSlash = 'always';
 
 	/**
 	 * Updates the global store with the current path. (Used for highlighting

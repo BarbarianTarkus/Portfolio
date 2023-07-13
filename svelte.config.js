@@ -56,7 +56,6 @@ const config = {
 				'/blog/page/*'
 			]
 		},
-		trailingSlash: 'always',
 		paths: {
 			base: dev ? '' : process.env.BASE_PATH,
 		}
