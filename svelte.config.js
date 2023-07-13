@@ -56,8 +56,9 @@ const config = {
 				'/blog/page/*'
 			]
 		},
+		trailingSlash: 'always',
 		paths: {
-			base: "/svelte-blog"
+			base: dev ? '' : process.env.BASE_PATH,
 		}
 	}
 };
