@@ -13,7 +13,7 @@
 		"format": "prettier --plugin-search-dir . --write .",
 		"test:integration": "playwright test",
 		"test:unit": "vitest",
-		"deploy": "gh-pages -d build"
+		"deploy": "gh-pages -d ./build"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",

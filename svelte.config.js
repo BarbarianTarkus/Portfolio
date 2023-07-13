@@ -33,10 +33,13 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter(),
-		paths: {
-			base: dev ? '' : process.env.BASE_PATH,
-		},
+		adapter: adapter({
+			pages: 'build',
+            assets: 'build',
+            fallback: undefined,
+            precompress: false,
+            strict: true
+		}),
 		prerender: {
 			entries: [
 				'*',
@@ -48,7 +51,10 @@ const config = {
 				'/blog/page/',
 				'/blog/page/*',
 			]
-		}
+		},		
+		paths: {
+			base: dev ? '' : process.env.BASE_PATH,
+		},
 	}
 };
 
