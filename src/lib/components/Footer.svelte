@@ -4,6 +4,7 @@
 	import Github from './svg/github.svelte';
 	import Linkedin from './svg/linkedin.svelte';
 	import RSS from './svg/rss.svelte';
+	import { base } from "$app/paths";
 </script>
 
 <footer>

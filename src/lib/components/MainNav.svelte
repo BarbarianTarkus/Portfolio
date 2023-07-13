@@ -4,6 +4,7 @@
 	import NavItem from './NavItem.svelte';
 	import HamburgerMenuButton from './HamburgerMenuButton.svelte';
 	import { base } from "$app/paths";
+	
 	let i = 0;
 </script>
 
