@@ -39,9 +39,6 @@ const { PostContent } = data
 		class="cover-image"
 		src="{coverImage}"
 		alt=""
-		style="aspect-ratio: {coverWidth} / {coverHeight};"
-		width={coverWidth}
-		height={coverHeight}
 	/>
 	<h1 class=post-title>{ title }</h1>
 </div>
