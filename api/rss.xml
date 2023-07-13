@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>R</title>
+<description>Portfolio site of Ricardo Verduguez</description>
+<link></link>
+<atom:link href="https:///rss.xml" rel="self" type="application/rss+xml"/>
+<item>
+<guid isPermaLink="true">https:///blog/1</guid>
+<title>Github Presentation</title>
+<link>https:///blog/1</link>
+<description>This is my Github Presentation</description>
+<pubDate>Wed, 01 Dec 2021 00:00:00 GMT</pubDate>
+</item><item>
+<guid isPermaLink="true">https:///blog/2</guid>
+<title>Github Presentation</title>
+<link>https:///blog/2</link>
+<description>This is my Github Presentation</description>
+<pubDate>Wed, 01 Dec 2021 00:00:00 GMT</pubDate>
+</item><item>
+<guid isPermaLink="true">https:///blog/3</guid>
+<title>Github Presentation</title>
+<link>https:///blog/3</link>
+<description>This is my Github Presentation</description>
+<pubDate>Wed, 01 Dec 2021 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
