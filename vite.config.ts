@@ -3,7 +3,7 @@ import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
 	plugins: [sveltekit()],
-	base: '/svelte-blog/',
+	base: 'https://barbariantarkus.github.io/svelte-blog/',
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
 	}
