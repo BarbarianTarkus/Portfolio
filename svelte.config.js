@@ -48,7 +48,7 @@ const config = {
 			]
 		},
 		paths: {
-			base: dev ? '' : '/svelte-blog'
+			base: dev ? '' : process.env.BASE_PATH,
 		}
 	}
 };
