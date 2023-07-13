@@ -33,15 +33,8 @@ const config = {
 			assets: 'build',
 			fallback: undefined,
 			precompress: false,
-			strict: true,
-			routes: {
-				include: ['/*'],
-				exclude: ['<all>']	
-			}
+			strict: true
 		}),
-		paths: {
-			base: dev ? '' : '/svelte-blog'
-		},
 		prerender: {
 			entries: [
 				'*',
@@ -54,7 +47,9 @@ const config = {
 				'/blog/page/*'
 			]
 		},
-
+		paths: {
+			base: dev ? '' : '/svelte-blog'
+		}
 	}
 };
 
