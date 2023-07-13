@@ -3,6 +3,7 @@
 	import { isMenuOpen } from '$lib/assets/js/store';
 	import NavItem from './NavItem.svelte';
 	import HamburgerMenuButton from './HamburgerMenuButton.svelte';
+	import { base } from "$app/paths";
 	let i = 0;
 </script>
 
@@ -10,7 +11,7 @@
 <nav class="main-nav" class:open={$isMenuOpen}>
 	<ul>
 		{#each navItems as page, i}
-			<NavItem href={page.route}>
+			<NavItem href={base}/{page.route}>
 				<b class="nav-index">{i + 1}. </b>{page.title}
 			</NavItem>
 		{/each}
