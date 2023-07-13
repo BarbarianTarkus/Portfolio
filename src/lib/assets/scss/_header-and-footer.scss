@@ -3,7 +3,8 @@
 header,
 footer {
 	font-family: var(--primaryFont);
-	padding: 2.5rem 2rem;
+	padding: 2.5rem;
+	
 	
 	a {
 		text-decoration: none;
@@ -39,8 +40,7 @@ header {
 	color: var(--darker);
 	display: flex;
 	justify-content: space-between;
-
-
+	padding: 2.5rem 10rem;
 	@media (min-width: vars.$smMin) {
 		justify-content: center;
 		height: auto;
@@ -55,13 +55,15 @@ header {
 		text-align: left;
 		margin: 0;
 		display: block;
-		font-size: 1.4rem;
+		font-size: 4rem;
 		font-weight: bold;
 
 		@media (min-width: vars.$smMin) {
 			width: 100%;
-			font-size: 1.6rem;
+			font-size:3rem;
 		}
+
+		font-family: var(--codeFont);
 	}
 
 	.menu-button {
@@ -78,6 +80,7 @@ header {
 	}
 
 	.main-nav {
+		font-family: var(--codeFont);
 		position: fixed;
 		z-index: 2;
 		top: 0;
@@ -101,13 +104,13 @@ header {
 			opacity: 1;
 			pointer-events: unset;
 			visibility: unset;
-
+			background-color: var(--background);
 			li {
 				opacity: 0;
 				animation: slide_in_left .2s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
 
 				a {
-					color: inherit;
+					color: var(--text-accent);
 				}
 
 				// Probably shouldn't have more than 8 main nav menu items, but if you do, you can adjust this
@@ -183,6 +186,7 @@ footer {
 	p {
 		margin: 0;
 		font-size: 0.8rem;
+		font-family: var(--accentFont);
 	}
 
 	a {
@@ -194,12 +198,6 @@ footer {
 
 		@media (min-width: vars.$smMin) {
 
-		}
-
-		ul {
-			li + li {
-				margin-top: 0.5rem;
-			}
 		}
 	}
 }

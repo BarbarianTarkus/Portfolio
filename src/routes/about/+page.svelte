@@ -1,4 +1,16 @@
 <!-- about/+page.svelte -->
-<h1>Hi, I'm Josh!</h1>
+<h1>About Me</h1>
+<h1>Where I Worked</h1>
+<h1>Projects</h1>
 
-<p>This is my about page.</p>
+
+
+<style lang="scss">
+  h1 {
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--lightest-slate);
+  }
+</style>

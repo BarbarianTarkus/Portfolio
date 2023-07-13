@@ -21,6 +21,12 @@
   </p>
 </div>
 
+<a href="/about">
+  <button class="blog-button">
+    About Me!
+  </button>
+</a>
+
 
 
 <style lang="scss">
@@ -37,6 +43,7 @@
     font-weight: 400;
     margin: 0;
     color: var(--text-accent);
+    font-family: var(--codeFont);
   }
   .big-heading {
     font-size: 4rem;
@@ -55,6 +62,31 @@
     font-weight: 400;
     margin: 0;
     color: var(-slate);
+  }
+
+
+  a {
+    text-decoration: none;
+    .blog-button{
+      background-color: transparent;
+      color: var(--lightest-slate);
+      border-color: var(--text-accent);
+      border-radius: 0.5rem;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1;
+      cursor: pointer;
+      transition: var(--transition);
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: var(--text-accent);
+        color: var(--background);
+      }
+      font-family: var(--codeFont);
+
+    }
   }
 
 </style>

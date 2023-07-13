@@ -34,6 +34,7 @@ const { PostContent } = data
 
 <article class="post">
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
+<div class="cover-image-container">
 	<img
 		class="cover-image"
 		src="{coverImage}"
@@ -42,8 +43,9 @@ const { PostContent } = data
 		width={coverWidth}
 		height={coverHeight}
 	/>
-
 	<h1 class=post-title>{ title }</h1>
+</div>
+
 	
 	<div class="meta">
 		<b>Published:</b> {date}
@@ -68,3 +70,18 @@ const { PostContent } = data
 		</aside>
 	{/if}
 </article> 
+
+
+<style lang="scss">
+	.cover-image {
+		width: 100%;
+		max-width: 20rem;
+		height: 50%
+	}
+	cover-image-container{
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+</style>

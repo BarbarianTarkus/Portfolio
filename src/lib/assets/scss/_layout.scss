@@ -10,7 +10,7 @@
 
 main {
 	width: 100%;
-	max-width: 42rem;
+	max-width: 54rem;
 	margin: 6rem auto;
 	padding: 0 1rem;
 }
@@ -23,16 +23,7 @@ main {
 }
 
 
-.cover-image {
-	width: 100%;
-	max-width: 100%;
-	height: auto;
-}
-.cover-image-blog {
-	width: 100%;
-	max-width: 100%;
-	height: auto;
-}
+
 .post {
 	h1 {
 		margin-bottom: 1rem;
@@ -52,22 +43,7 @@ li {
 	margin-bottom: 0.25rem;
 }
 
-.posts-list {
-	list-style-type: none;
-	padding: 0;
 
-	li {
-		margin-bottom: 6rem;
-	}
-
-	img + h2 {
-		margin-top: 1rem;
-	}
-
-	a {
-		display: block;
-	}
-}
 
 .post-footer { 
 	ul {
