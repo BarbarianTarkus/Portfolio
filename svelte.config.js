@@ -36,9 +36,12 @@ const config = {
 			strict: true,
 			routes: {
 				include: ['/*'],
-				exclude: ['<all>']
+				exclude: ['<all>']	
 			}
 		}),
+		paths: {
+			base: dev ? '' : '/sveltekit-blog'
+		},
 		prerender: {
 			entries: [
 				'*',
