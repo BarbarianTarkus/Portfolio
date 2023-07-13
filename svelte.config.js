@@ -28,6 +28,15 @@ const config = {
 	],
 
 	kit: {
+		handleHttpError: ({ path, referrer, message }) => {
+			// ignore deliberate link to shiny 404 page
+			if (path === '/not-found' && referrer === '/blog/how-we-built-our-404-page') {
+				return;
+			}
+
+			// otherwise fail the build
+			throw new Error(message);
+		},
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
@@ -35,17 +44,10 @@ const config = {
 			precompress: false,
 			strict: true
 		}),
-		prerender: {
-			handleHttpError: ({ path, referrer, message }) => {
-				// ignore deliberate link to shiny 404 page
-				if (path === '/not-found' && referrer === '/blog/how-we-built-our-404-page') {
-					return;
-				}
-
-				// otherwise fail the build
-				throw new Error(message);
-			},
-			entries: [
+		paths: {
+			base: "/svelte-blog/"
+		},
+		entries: [
 				'*',
 				'/api/posts/page/*',
 				'/blog/category/*/page/',
@@ -55,9 +57,6 @@ const config = {
 				'/blog/page/',
 				'/blog/page/*'
 			]
-		},
-		paths: {
-			base: "/svelte-blog"
 		}
 	}
 };
