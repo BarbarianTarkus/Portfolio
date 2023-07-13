@@ -40,7 +40,7 @@ const config = {
 			}
 		}),
 		paths: {
-			base: dev ? '' : '/sveltekit-blog'
+			base: dev ? '' : '/svelte-blog'
 		},
 		prerender: {
 			entries: [
