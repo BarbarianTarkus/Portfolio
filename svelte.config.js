@@ -33,7 +33,11 @@ const config = {
 			assets: 'build',
 			fallback: undefined,
 			precompress: false,
-			strict: true
+			strict: true,
+			routes: {
+				include: ['/*'],
+				exclude: ['<all>']
+			}
 		}),
 		prerender: {
 			entries: [
@@ -47,9 +51,7 @@ const config = {
 				'/blog/page/*'
 			]
 		},
-		paths: {
-			base: dev ? '' : process.env.BASE_PATH
-		}
+
 	}
 };
 
