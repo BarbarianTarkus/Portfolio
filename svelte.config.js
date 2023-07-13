@@ -57,7 +57,7 @@ const config = {
 			]
 		},
 		paths: {
-			base: "/svelte-blog/"
+			base: "/svelte-blog"
 		}
 	}
 };
