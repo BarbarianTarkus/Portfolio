@@ -4,6 +4,10 @@ import preprocess from 'svelte-preprocess'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeSlug from 'rehype-slug'
 
+
+const dev = process.argv.includes('dev');
+
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Ensures both .svelte and .md files are treated as components (can be imported and used anywhere, or used as pages)
@@ -30,18 +34,21 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
-    prerender: {
-      entries: [
-        '*',
-        '/api/posts/page/*',
-        '/blog/category/*/page/',
-        '/blog/category/*/page/*',
-        '/blog/category/page/',
-        '/blog/category/page/*',
-        '/blog/page/',
-        '/blog/page/*',
-      ]
-    }
+		paths: {
+			base: dev ? '' : process.env.BASE_PATH,
+		},
+		prerender: {
+			entries: [
+				'*',
+				'/api/posts/page/*',
+				'/blog/category/*/page/',
+				'/blog/category/*/page/*',
+				'/blog/category/page/',
+				'/blog/category/page/*',
+				'/blog/page/',
+				'/blog/page/*',
+			]
+		}
 	}
 };
 
