@@ -28,7 +28,7 @@
 		</ul>
 	</nav>
 
-	<!-- <p>&copy;{new Date().getFullYear()} {siteAuthor}</p> -->
+	<p>&copy;{new Date().getFullYear()} {siteAuthor}</p>
 </footer>
 
 <style lang="scss">
