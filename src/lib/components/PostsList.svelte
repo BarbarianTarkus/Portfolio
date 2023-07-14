@@ -13,7 +13,7 @@
 					</h2>
 					<img
 						class="cover-image-blog"
-						src={post.coverImage}
+						src={base}/{post.coverImage}
 						alt=""
 						width={post.coverWidth}
 						height={post.coverHeight}
