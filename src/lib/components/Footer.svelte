@@ -27,6 +27,8 @@
 			</li>
 		</ul>
 	</nav>
+
+	<p>&copy;{new Date().getFullYear()} {siteAuthor}</p>
 </footer>
 
 <style lang="scss">
