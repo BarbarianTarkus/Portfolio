@@ -7,7 +7,7 @@ footer {
 
 	a {
 		text-decoration: none;
-
+		font-size: 1rem;
 		&.active {
 			font-weight: bold;
 		}
@@ -137,7 +137,9 @@ header {
 
 		.nav-index {
 			color: var(--text-accent);
+			font-size: 1rem;
 		}
+	
 		@media (min-width: vars.$smMin) {
 			opacity: 1;
 			transform: none;

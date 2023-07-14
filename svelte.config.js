@@ -4,7 +4,6 @@ import preprocess from 'svelte-preprocess';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 
-const dev = process.argv.includes('dev');
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -28,20 +27,7 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
-			fallback: undefined,
-			precompress: false,
-			strict: true,
-			routes: {
-				include: ['/*'],
-				exclude: ['<all>']	
-			}
-		}),
-		paths: {
-			base: dev ? '' : '/svelte-blog'
-		},
+		adapter: adapter(),
 		prerender: {
 			entries: [
 				'*',
