@@ -1,5 +1,9 @@
 
-## The branch Pages is the branchn related to the GitHub Pages that has his own peculiarity's
+**The branch Pages is the branchn related to the GitHub Pages that has his own peculiarity's**
+
+
+
+# Default Readme by Svelte-kit
 
 ## Developing
 
