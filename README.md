@@ -1,5 +1,5 @@
 
-**The branch Pages is the branchn related to the GitHub Pages that has his own peculiarity's**
+**The branch [Pages](https://github.com/BarbarianTarkus/svelte-blog/tree/pages) is the branchn related to the GitHub Pages that has his own peculiarity's**
 
 
 
