@@ -1,9 +1,14 @@
 ## GitHub Pages
 
+**This Branch is the implementation of the SvelteKit blog but using Github Pages as a Hosting.**
 
 
+Problematics:
+* Without changing the 'master' branch implementation GitHub pages doensn't recognize de routes, and Jekyll builts the page 
+with the ./Readme.md as the index.html
 
-According to the **SvelteKit Docs**:
+
+According to the **SvelteKit Docs** this is the way to publish our project to GitHub Pages:
 [SvelteKit SSG GitHub Pages](https://kit.svelte.dev/docs/adapter-static#github-pages)
 
 1. Edit 'svelte.config.js'
