@@ -8,7 +8,6 @@ According to the SvelteKit Docs:
 
 
 ```js
-
 /// file: svelte.config.js
 
 import adapter from '@sveltejs/adapter-static';
