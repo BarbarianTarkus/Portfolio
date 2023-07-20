@@ -54,7 +54,8 @@ According to the **SvelteKit Docs** this is the way to publish our project to Gi
 	</a>
 	```
 
-3. Also I use the deploying configuration used on the Docs
+3. Also I use the deploying configuration used on the Docs:
+4. 
 	.github/workflows/deploy.yml
 	```yml
 	name: Deploy to GitHub Pages
