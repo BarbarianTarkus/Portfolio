@@ -5,8 +5,8 @@
 
 Problematics:
 * Without changing the 'master' branch implementation GitHub pages doensn't recognize de routes, and Jekyll builts the page 
-with the ./Readme.md as the home page situated on the route 'https://barbariantarkus.github.io/svelte-blog/' and if we manage to navigate to /about route for example and I click the 'Home' button
-I will be redirected to '/' that is 'https://barbariantarkus.github.io/'(and it has to be 'https://barbariantarkus.github.io/svelte-blog/') and we will have an "ERROR NOT FOUND"
+with the ./Readme.md as the home page situated on the route https://barbariantarkus.github.io/svelte-blog/ and if we manage to navigate to /about route for example and I click the 'Home' button
+I will be redirected to '/' that is https://barbariantarkus.github.io/ (and it has to be https://barbariantarkus.github.io/svelte-blog/) and we will have an "ERROR NOT FOUND"
 
 
 
