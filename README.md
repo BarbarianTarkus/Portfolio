@@ -6,9 +6,9 @@
 According to the SvelteKit Docs:
 [SvelteKit SSG GitHub Pages](https://kit.svelte.dev/docs/adapter-static#github-pages)
 
-
+svelte.config.js
 ```js
-/// file: svelte.config.js
+
 
 import adapter from '@sveltejs/adapter-static';
 
@@ -26,10 +26,11 @@ const config = {
 ```
 
 
-* Importing for URL mapping on our components or a layout:
-
+* Importing for URL mapping on our components or a layout:ç
+  
+any component.svelte or layout.svelte
 ```js
-/// file: any component.svelte or layout.svelte
+
 <script>
 ...
 	import { base } from "$app/paths"; // Import this on general layout or every page that has
@@ -47,9 +48,8 @@ const config = {
 * Also I use the deploying configuration used on the Docs
 
 
-
+.github/workflows/deploy.yml
 ```yml
-/// file .github/workflows/deploy.yml
 name: Deploy to GitHub Pages
 
 on:
