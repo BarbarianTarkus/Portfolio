@@ -3,8 +3,10 @@
 
 
 
-According to the SvelteKit Docs:
+According to the **SvelteKit Docs**:
 [SvelteKit SSG GitHub Pages](https://kit.svelte.dev/docs/adapter-static#github-pages)
+
+1. Edit 'svelte.config.js'
 
 svelte.config.js
 ```js
@@ -26,7 +28,7 @@ const config = {
 ```
 
 
-* Importing for URL mapping on our components or a layout:ç
+2. Import 'base' for URL mapping on our components or a layout:
   
 any component.svelte or layout.svelte
 ```js
@@ -44,10 +46,7 @@ any component.svelte or layout.svelte
 </a>
 ```
 
-
-* Also I use the deploying configuration used on the Docs
-
-
+3. Also I use the deploying configuration used on the Docs
 .github/workflows/deploy.yml
 ```yml
 name: Deploy to GitHub Pages
