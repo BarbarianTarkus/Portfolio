@@ -10,7 +10,8 @@ Problematic:
 
 
 
-According to the **SvelteKit Docs** this is the way to publish our project to GitHub Pages:
+According to the **SvelteKit Docs** this is the way to publish our project to GitHub Pages is:
+
 [SvelteKit SSG GitHub Pages](https://kit.svelte.dev/docs/adapter-static#github-pages)
 
 1. Edit 'svelte.config.js'
