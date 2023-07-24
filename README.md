@@ -3,7 +3,13 @@
 
 
 
-# Default Readme by Svelte-kit
+# Svelte Kit Blog
+**Made following [Josh Collinsworth](https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog) guide.**
+
+**Characteristics:**
+* RSS
+* Markdown Preprocessing and Syntax Highllighting
+* API for posts and categories
 
 ## Developing
 
