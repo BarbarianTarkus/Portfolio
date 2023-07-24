@@ -1,5 +1,5 @@
 
-**The branch [Pages](https://github.com/BarbarianTarkus/svelte-blog/tree/pages) is the branch related to the GitHub Pages implementation that has his own peculiarity's**
+**The branch [Pages](https://github.com/BarbarianTarkus/svelte-blog/tree/pages) is the branch related to the GitHub Pages implementation that has his own peculiarity's.**
 
 
 
