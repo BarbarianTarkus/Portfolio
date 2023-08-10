@@ -1,7 +1,7 @@
 <script>
 	import PostsList from '$lib/components/PostsList.svelte';
 	import { siteDescription } from '$lib/config';
-
+	import { base } from "$app/paths";
 	export let data;
 </script>
 
@@ -20,7 +20,7 @@
 	</p>
 </div>
 
-<a href="/about">
+<a href="{base}/about">
 	<button class="blog-button"> About Me! </button>
 </a>
 

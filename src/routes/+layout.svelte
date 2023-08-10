@@ -7,12 +7,14 @@
 	import { preloadCode } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
+
 	export let data;
 
 	const transitionIn = { delay: 150, duration: 150 };
 	const transitionOut = { duration: 100 };
 
 	export const prerender = true;
+	export const trailingSlash = 'always';
 
 	/**
 	 * Updates the global store with the current path. (Used for highlighting

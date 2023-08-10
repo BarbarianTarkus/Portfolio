@@ -4,18 +4,19 @@
 	import Github from './svg/github.svelte';
 	import Linkedin from './svg/linkedin.svelte';
 	import RSS from './svg/rss.svelte';
+	import { base } from "$app/paths";
 </script>
 
 <footer>
 	<nav>
 		<ul>
 			<li>
-				<a href="api/rss.xml">
+				<a href="{base}/api/rss.xml">
 					<RSS />
 				</a>
 			</li>
 			<li>
-				<a href="https://github.com/BarbarianTarkus/svelte-blog">
+				<a href="https://github.com/BarbarianTarkus">
 					<Github />
 				</a>
 			</li>
@@ -26,4 +27,12 @@
 			</li>
 		</ul>
 	</nav>
+
+	<!-- <p>&copy;{new Date().getFullYear()} {siteAuthor}</p> -->
 </footer>
+
+<style lang="scss">
+	p {
+		text-align: center;
+	}
+</style>

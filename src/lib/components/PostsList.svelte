@@ -1,4 +1,5 @@
 <script>
+	import { base } from "$app/paths";
 	export let posts = [];
 </script>
 
@@ -6,17 +7,14 @@
 	{#each posts as post}
 		<article>
 			<li>
-				<a href="/blog/{post.slug}">
+				<a href="{base}/blog/{post.slug}">
 					<h2>
 						{post.title}
 					</h2>
 					<img
 						class="cover-image-blog"
-						src={post.coverImage}
+						src={base}{post.coverImage}
 						alt=""
-						width={post.coverWidth}
-						height={post.coverHeight}
-						style="ratio: {post.coverWidth} / {post.coverHeight}"
 					/>
 				</a>
 				<p>{post.excerpt}</p>
