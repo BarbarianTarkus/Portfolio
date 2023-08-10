@@ -5,7 +5,7 @@ import { createLogger } from 'vite';
 const logger = createLogger();
 const originalWarning = logger.warn;
 logger.warn = (msg, options) => {
-	if (msg.includes('element should have an alt') ||  msg.includes('Unused CSS selector')) return;
+	if (msg.includes('element should have an alt') || msg.includes('Unused CSS selector')) return;
 	originalWarning(msg, options);
 };
 
@@ -15,5 +15,5 @@ export default defineConfig({
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
 	},
-	customLogger: logger,
+	customLogger: logger
 });

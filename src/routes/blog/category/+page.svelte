@@ -1,13 +1,11 @@
 <script>
-	import { base } from "$app/paths";
+	import { base } from '$app/paths';
 	export let data;
 	const { uniqueCategories } = data;
 </script>
 
 <svelte:head>
-
 	<title>Blog | Categories</title>
-	
 </svelte:head>
 
 <div class="compressed-content">

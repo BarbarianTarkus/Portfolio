@@ -4,8 +4,6 @@ import preprocess from 'svelte-preprocess';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 
-
-
 const dev = process.argv.includes('dev');
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -44,8 +42,8 @@ const config = {
 			]
 		},
 		paths: {
-            base: dev ? 'process.env.BASE_PATH' : "",
-        }
+			base: dev ? 'process.env.BASE_PATH' : ''
+		}
 	}
 };
 
