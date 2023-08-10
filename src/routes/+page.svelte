@@ -1,8 +1,6 @@
 <script>
-	import PostsList from '$lib/components/PostsList.svelte';
 	import { siteDescription } from '$lib/config';
-	import { base } from "$app/paths";
-	export let data;
+	import { base } from '$app/paths';
 </script>
 
 <svelte:head>

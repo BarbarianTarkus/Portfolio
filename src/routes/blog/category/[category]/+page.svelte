@@ -3,7 +3,7 @@
 	import PostsList from '$lib/components/PostsList.svelte';
 	import Pagination from '$lib/components/Pagination.svelte';
 	import { postsPerPage } from '$lib/config';
-	import { base } from "$app/paths";
+	import { base } from '$app/paths';
 	export let data;
 
 	const { page, posts, category, total } = data;
