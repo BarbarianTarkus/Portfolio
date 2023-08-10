@@ -1,7 +1,7 @@
 ---
 title: 'Termux Tips'
-date: '2023-07-2023'
-updated: '2023-07-2023'
+date: '23-07-2023'
+updated: '23-07-2023'
 categories:
   - 'Android'
   - 'Terminal'
