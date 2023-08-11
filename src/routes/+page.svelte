@@ -13,9 +13,9 @@
 <div>
 	<h1 class="little-heading">Hi, my name is</h1>
 	<h1 class="big-heading">Ricardo Verduguez.</h1>
-	<h1 class="big-heading-faded">I'm a Software Engineer Student</h1>
+	<h1 class="big-heading-faded">Software Engineer Student</h1>
 	<p class="resume-text">
-		Focusing on cibersecurity, but also interested in web development, willing to learn new
+		Focusing on cibersecurity, but also interested in Web development, willing to learn new
 		technologies and improve my skills.
 	</p>
 </div>
