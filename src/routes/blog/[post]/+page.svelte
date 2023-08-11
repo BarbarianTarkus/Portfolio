@@ -6,7 +6,7 @@
 		data.meta;
 	const { PostContent } = data;
 
-	import { base } from '$app/paths';
+	import { base } from "$app/paths";
 </script>
 
 <svelte:head>
@@ -27,7 +27,7 @@
 <article class="post">
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
 	<div class="cover-image-container">
-		<img class="cover-image" src="{base}{coverImage}" alt="" />
+		<img class="cover-image" src={base}{coverImage} alt="" />
 		<h1 class="post-title">{title}</h1>
 	</div>
 

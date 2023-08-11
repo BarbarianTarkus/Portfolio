@@ -5,7 +5,7 @@
 	export let totalPosts;
 	export let path = '/blog/page';
 
-	import { base } from '$app/paths';
+	import { base } from "$app/paths";
 
 	let pagesAvailable;
 	$: pagesAvailable = Math.ceil(totalPosts / postsPerPage);

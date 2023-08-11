@@ -1,5 +1,5 @@
 <script>
-	import { base } from '$app/paths';
+	import { base } from "$app/paths";
 	export let posts = [];
 </script>
 
@@ -11,7 +11,11 @@
 					<h2>
 						{post.title}
 					</h2>
-					<img class="cover-image-blog" src="{base}{post.coverImage}" alt="" />
+					<img
+						class="cover-image-blog"
+						src={base}{post.coverImage}
+						alt=""
+					/>
 				</a>
 				<p>{post.excerpt}</p>
 			</li>
