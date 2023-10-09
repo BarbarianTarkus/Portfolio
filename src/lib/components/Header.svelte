@@ -15,7 +15,7 @@
 		Skip to main content
 	</a>
 
-	<a href="{base}" class="site-title">
+	<a href={base} class="site-title">
 		{siteTitle}
 	</a>
 

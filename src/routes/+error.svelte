@@ -9,5 +9,5 @@
 
 <p><strong>Sorry!</strong> Maybe try one of these links?</p>
 <ul>
-	<li><a href="{base}">Home</a></li>
+	<li><a href={base}>Home</a></li>
 </ul>
