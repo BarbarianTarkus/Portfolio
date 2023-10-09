@@ -28,6 +28,7 @@ const config = {
 	],
 
 	kit: {
+		
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
@@ -36,7 +37,15 @@ const config = {
 			strict: true
 		}),
 		prerender: {
-			entries: ['*']
+			handleHttpError: ({ path, referrer, message }) => {
+				// ignore deliberate link to shiny 404 page
+				if (path === '/not-found' && referrer === '/blog/how-we-built-our-404-page') {
+					return;
+				}
+
+				// otherwise fail the build
+				throw new Error(message);
+			}
 		},
 		paths: {
 			base: dev ? '' : process.env.BASE_PATH
