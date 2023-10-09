@@ -10,7 +10,7 @@
 <nav class="main-nav" class:open={$isMenuOpen}>
 	<ul>
 		{#each navItems as page, i}
-			<NavItem href="{base}/{page.route}">
+			<NavItem href="{base}{page.route}">
 				<b class="nav-index">0{i + 1}. </b>{page.title}
 			</NavItem>
 		{/each}

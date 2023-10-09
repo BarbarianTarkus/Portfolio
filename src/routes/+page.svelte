@@ -18,7 +18,7 @@
 	</p>
 </div>
 
-<a href="{base}about">
+<a href="{base}/about">
 	<button class="blog-button"> About Me! </button>
 </a>
 
