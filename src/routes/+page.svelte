@@ -1,5 +1,6 @@
 <script>
 	import { siteDescription } from '$lib/config';
+	import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -17,7 +18,7 @@
 	</p>
 </div>
 
-<a href="/about">
+<a href="{base}/about">
 	<button class="blog-button"> About Me! </button>
 </a>
 

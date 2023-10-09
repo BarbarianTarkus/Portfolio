@@ -10,7 +10,7 @@
 	<nav>
 		<ul>
 			<li>
-				<a href="https://github.com/BarbarianTarkus/svelte-blog">
+				<a href="https://github.com/BarbarianTarkus/Portfolio">
 					<Github />
 				</a>
 			</li>

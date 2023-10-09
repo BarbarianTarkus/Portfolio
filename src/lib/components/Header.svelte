@@ -2,6 +2,7 @@
 	import MainNav from './MainNav.svelte';
 	import HamburgerMenuButton from './HamburgerMenuButton.svelte';
 	import { siteTitle } from '$lib/config';
+	import { base } from '$app/paths';
 
 	const focusMain = () => {
 		const main = document.querySelector('main');
@@ -14,7 +15,7 @@
 		Skip to main content
 	</a>
 
-	<a href="/" class="site-title">
+	<a href="{base}" class="site-title">
 		{siteTitle}
 	</a>
 
