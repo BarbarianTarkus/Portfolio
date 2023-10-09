@@ -10,11 +10,6 @@
 	<nav>
 		<ul>
 			<li>
-				<a href="api/rss.xml">
-					<RSS />
-				</a>
-			</li>
-			<li>
 				<a href="https://github.com/BarbarianTarkus/svelte-blog">
 					<Github />
 				</a>
@@ -29,7 +24,4 @@
 </footer>
 
 <style lang="scss">
-	p {
-		text-align: center;
-	}
 </style>
