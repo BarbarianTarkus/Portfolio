@@ -12,7 +12,8 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
 		"test:integration": "playwright test",
-		"test:unit": "vitest"
+		"test:unit": "vitest",
+		"deploy": "touch build/.nojekyll && gh-pages -d build -t true"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",

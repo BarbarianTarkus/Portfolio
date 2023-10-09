@@ -4,6 +4,8 @@ import preprocess from 'svelte-preprocess';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 
+const dev = process.argv.includes('dev');
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Ensures both .svelte and .md files are treated as components (can be imported and used anywhere, or used as pages)
@@ -31,6 +33,9 @@ const config = {
 			entries: [
 				'*',
 			]
+		},
+		paths: {
+			base: dev ? '' : process.env.BASE_PATH,
 		}
 	}
 };
