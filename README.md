@@ -1,5 +1,3 @@
-**The branch [Pages](https://github.com/BarbarianTarkus/svelte-blog/tree/pages) is the branch related to the GitHub Pages implementation that has his own peculiarity's.**
-
 # Svelte Kit Blog
 
 **Made following [Josh Collinsworth](https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog) guide.**
